@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slider_attributes="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circular_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.cindaperiodtask.Slider
+        android:id="@+id/slider"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        slider_attributes:background_padding="30dp"
+        android:rotation="160"
+        slider_attributes:min="0"
+        slider_attributes:max="30"
+        slider_attributes:stroke_width="12dp"
+        slider_attributes:thumb_color="@android:color/holo_blue_dark"
+        slider_attributes:arc_color="@android:color/transparent"
+        slider_attributes:thumb_reading_text_size="10dp"
+        slider_attributes:thumb_radius="24dp"
+        slider_attributes:thumb_text_color="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Day 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#595757" />
+
+
+</RelativeLayout>
